@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.iphone-screen-white {
+    background-color: #94afff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue-bg {
+    background-color: #94afff;
+    height: 100vh;
+    padding: 20px;
+}
+
+.logo-text-blue { 
+    color: #ffffff; 
+    font-size: 3rem; 
+    margin-bottom: 30px; 
+}
+
+/* ២. កែសម្រួលទំហំប្រអប់ប៊ូតុង */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 85%;        /* ឱ្យវាធំល្មមលើទូរស័ព្ទ */
+    max-width: 380px;  /* ឃាត់វាមិនឱ្យលើសពី 380px ទោះបើកលើកុំព្យូទ័រក៏ដោយ */
+    margin: 0 auto;
+}
+
+/* ៣. កែសម្រួលទំហំប្រអប់ Input (Email/Password) */
+.form-container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 85%;        /* បន្ថែមទទឹងឱ្យវា */
+    max-width: 380px;  /* កំណត់ទំហំឱ្យស្មើប៊ូតុងខាងលើ */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn, .continue-btn {
+    padding: 18px;
+    border-radius: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    width: 100%;       /* ឱ្យប៊ូតុងរត់ពេញប្រអប់ Container */
+}
+
+.register-btn {background-color: white; color: #94afff;}
+.login-btn {background-color: #94afff; color: white; border: 2px solid white; }
+
+/* Form Styling */
+.form-container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 15px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+input::placeholder { color: rgba(255, 255, 255, 0.8); }
+
+.continue-btn { background-color: #fffdec; color: #94afff; margin-top: 20px; }
+
+.error-text { color: #ff3333; font-size: 0.8rem; height: 15px; }
+
+.back-link { color: white; text-decoration: none; font-weight: bold; font-size: 1.2rem; }

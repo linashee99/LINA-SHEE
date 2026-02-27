@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.iphone-screen {
+    /* vh/vw means the background always fits the screen 100% */
+    width: 100vw;
+    height: 100vh;
+    background-color: #94afff;
+
+    /* Flexbox keeps the text in the dead-center of ANY screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text {
+    color: #fffdec;
+    font-family: 'Arial Black', sans-serif;
+    
+    /* Using 'vw' makes the text get bigger on big screens 
+       and smaller on small screens automatically */
+    font-size: 50pt; 
+    
+    /* We add a limit so it doesn't get TOO big on a laptop */
+    max-width: 90%;
+    text-align: center;
+}
+
+/* This handles very wide screens like Laptops */
+@media (min-width: 768px) {
+    .logo-text {
+        font-size: 50px; /* Locks the size so it stays readable on PC */
+    }
+}

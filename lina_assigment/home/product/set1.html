@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Deatail</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body class="product-page">
+    <a href="/home/home3.html" class="back-link">← Log In</a>
+    <div class="product-container">
+        <div class="product-image">
+            <img src="/img/she/set1.jpg" alt="Set Product">
+        </div>
+
+        <div class="product-info">
+          <h2>Perfect Anti-Aging Routine Set</h2>
+          <p class="description">Complete Glow Routine Set</p>  
+          <hr>
+          <h3>What It Is:</h3>
+          <br>
+          <p class="description">A microbiome-powered skincare set featuring fermented Centella Asiatica from Madagascar and Ceramide NP, designed to strengthen hydration, and deliver targeted anti-aging benefits. Perfect for achieving a radiant and healthy glow.</p>
+          <h3>Product Benefits:</h3>
+          <p class="description">Repairing & Strengthening, Calming, Anti-Aging, Hydrating</p>
+          <h3>Skin Type:</h3>
+          <p class="description">Dry, Normal, Combination</p>
+          <h3>Key Ingredients:</h3>
+          <p class="description">Lactobacillus/Centella Asiatica Extract Ferment Filtrate, Centella Asiatica Extract, Madecassic Acid, Asiaticoside, Asiatic Acid, Ceramide NP, Phytosterols</p>
+          <hr>
+          <div class="price">$59.00</div>
+
+          <div class="action-bar">
+            <div class="quantity-control">
+               <button id="minus-btn" onclick="changeQty(-1)">-</button> 
+               <span id="qty-number">1</span>
+               <button id="plus-btn" onclick="changeQty(+1)">+</button>
+            </div>
+            <button class="add-bag-btn">Add To Bag</button>
+          </div>
+        </div>
+    </div>
+
+    <script src="product.js"></script>
+</body>
+</html>

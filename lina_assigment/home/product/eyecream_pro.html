@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body class="product-page">
+
+    <a href="/home/home3.html" class="back-link">← Log In</a>
+
+    <div class="product-container">
+        <div class="product-image">
+            <img src="/img/she/eye_cream1.jpg" alt="Eye Cream Product">
+        </div>
+
+        <div class="product-info">
+            <h2>Probio-Cica Bakuchiol Eye Cream</h2>
+            <p >Gentle Anti-wrinkle Eye Cream</p>
+            <hr>
+
+            
+                <h3>What It Is:</h3>
+                <p >A gentle eye cream with fermented Centella and Bakuchiol (vegan retinol) reduces the appearance of fine lines and wrinkles.</p>
+               
+                <h3>Product Benefits:</h3>
+                 <p >Calming, Anti-Aging, Hydrating</p>
+
+                <h3>Skin Type:</h3>
+                <p >Dry, Normal, Sensitive</p>
+
+                <h3>Key Ingredients:</h3>
+                <p >Lactobacillus/Centella Asiatica Extract Ferment Filtrate, Centella Asiatica Extract, Bakuchiol, Madecassic Acid, Asiaticoside, Asiatic Acid, Ceramide NP</p>
+
+                <hr>
+                
+            <div class="price">$19.00</div>
+
+
+            <div class="action-bar">
+                <div class="quantity-control">
+                    <button id="minus-btn" onclick="changeQty(-1)">−</button>
+                    <span id="qty-number">1</span>
+                    <button id="plus-btn" onclick="changeQty(1)">+</button>
+                </div>
+                <button class="add-bag-btn">Add to Bag</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="product.js"></script>
+</body>
+</html>

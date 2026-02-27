@@ -1,0 +1,57 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+
+.product-page { background-color: #fffdec; padding: 40px; }
+
+.back-link { color: #94afff; text-decoration: none; font-weight: bold; font-size: 1.2rem; }
+
+.product-container {
+    display: flex; gap: 50px; margin-top: 30px;
+    align-items: center; justify-content: center;
+}
+
+.product-image img {
+    width: 450px;           
+    height: 550px;
+    background-color: white;
+    border-radius: 20px; 
+    padding: 20px;
+
+    object-fit: contain;    /* This prevents stretching and keeps the whole product visible */
+    display: block;
+}
+
+.product-info { max-width: 500px; }
+.product-info h1 { font-size: 2.5rem; margin-bottom: 5px; }
+.description { color: #555; margin-bottom: 20px; }
+hr { border: 0.5px solid #ccc; margin: 20px 0; }
+h3 { margin-top: 15px; }
+.price { font-size: 2rem; margin: 20px 0; font-weight: bold; }
+
+/* រចនាប៊ូតុងបូកដក */
+.action-bar { display: flex; gap: 20px; align-items: center; }
+
+.quantity-control {
+    background-color: #94afff; display: flex;
+    align-items: center; border-radius: 10px; overflow: hidden;
+}
+
+.quantity-control button {
+    background: none; border: none; color: black;
+    padding: 15px 20px; font-size: 1.5rem; cursor: pointer;
+}
+
+#qty-number { font-size: 1.5rem; font-weight: bold; padding: 0 10px; }
+
+.add-bag-btn {
+    flex-grow: 1; padding: 18px; border-radius: 10px;
+    border: 1px solid #ccc; background-color: transparent;
+    font-size: 1.2rem; cursor: pointer;
+}
+
+/* This targets every paragraph inside the product-info div */
+.product-info p {
+    /* Your description styles go here */
+    font-size: 18px;
+    color: #555;
+    line-height: 100%;
+}

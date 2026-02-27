@@ -1,0 +1,124 @@
+/* General Page Styling */
+body {
+    background-color: #fdf8e1; /* Pale yellow background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+/* Navbar: Horizontal layout using Flexbox */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    
+}
+
+.nav-btn {
+    background-color: #8da9ff; /* Blue color from your image */
+    color: white;
+    border: none;
+    padding: 15px 0;
+    width: 250px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #708dec; /* Darkens slightly when mouse is over */
+}
+
+/* Search Bar Styling */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.search-bar {
+    background-color: #8da9ff;
+    width: 90%;
+    max-width: 1000px;
+    padding: 12px 25px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.search-bar input {
+    background: transparent;
+    border: none;
+    color: white;
+    margin-left: 15px;
+    font-size: 18px;
+    outline: none;
+    width: 100%;
+}
+
+/* Changes the color of the "Email address" text inside the box */
+.search-bar input::placeholder {
+    color: rgba(255,255,255,0.9);
+    font-weight: bold;
+}
+
+.search-icon {
+    color: white;
+    font-size: 20px;
+}
+
+/* The Grid for Products */
+.product-grid {
+    display: grid;
+    /* This creates 5 columns. If the screen is small, it drops to 1-2 columns */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Individual Card Styling */
+.product-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden; /* Clips the grey bottom to the rounded corners */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.image-box {
+    height: 250px; /* Gives a consistent height to all cards */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden; /* Keeps zoom effect inside the box */
+}
+
+.image-box img {
+    /* This makes sure the image fills the space without stretching */
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* CRITICAL: Maintains aspect ratio without cropping */
+    
+    /* Remove the max-width: 120px; as it limits taller images like eye cream */
+    transition: transform 0.4s ease; 
+}
+
+/* ZOOM ACTION: When mouse is over the card, the image grows */
+.product-card:hover img {
+    transform: scale(1.15); 
+}
+
+/* The Grey Bottom Label */
+.product-info {
+    background-color: #d9d9d9;
+    padding: 15px 20px;
+    font-size: 18px;
+    color: #333;
+}
